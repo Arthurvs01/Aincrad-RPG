@@ -33,6 +33,9 @@ async def start_login(update: Update, context: ContextTypes.DEFAULT_TYPE):
             context,
             image_path="welcome.jpg",
             text="already_registered.txt",
+            reply_markup = InlineKeyboardMarkup(
+                [[InlineKeyboardButton("Menu", callback_data="floor_1")]]
+                )
         )
         return ConversationHandler.END
 
@@ -119,6 +122,9 @@ async def select_class(update: Update, context: ContextTypes.DEFAULT_TYPE):
         context,
         image_path="welcome.jpg",
         text="login_success.txt",
+        reply_markup = InlineKeyboardMarkup(
+            [[InlineKeyboardButton("Menu", callback_data="floor_1")]]
+            )
     )
 
     return ConversationHandler.END

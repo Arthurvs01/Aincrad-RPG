@@ -1,1 +1,35 @@
-Texto de boas vindas
+===========================
+          <b>BEM-VINDO A AINCRAD</b>
+===========================
+
+Você acaba de cruzar os portões da Torre.
+
+Isto não é um jogo comum.
+Aqui, cada decisão pesa.
+Cada erro cobra.
+E seu pior inimigo pode ser você mesmo.
+
+⚠ Em Aincrad, descuido custa caro.
+Zerar o HP significa perder seu progresso.
+E insistir no erro pode custar sua jornada inteira.
+
+===========================
+                <b>SOBRE O JOGO</b>
+===========================
+
+• 10 mortes resultam no reset completo da conta.
+• A torre possui 20 andares.
+  Cada um alterna entre:
+  — Caça pacífica  
+  — Coleta  
+  — Ferraria  
+  — Caça hostil  
+  — PvP  
+
+• O mundo está em constante evolução.
+  Mecânicas podem mudar.
+  Desafios podem surgir.
+  Nada aqui é estático.
+
+Prepare-se.
+A subida começa agora.
