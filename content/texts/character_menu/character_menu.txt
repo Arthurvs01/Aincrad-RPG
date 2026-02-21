@@ -1,2 +1,12 @@
-menu de personagem
-{nome}
+===========================
+    <b>MENU DE PERSONAGEM</b>
+===========================
+<b>Nome</b>: {name}
+<b>Classe</b>: {pclass}
+<b>Guilda</b>: {guild}
+<b>Mortes</b>: {death}
+
+Status Ativo
+Dados Sincronizados
+
+Escolha sua proxima ação.

@@ -20,6 +20,7 @@ class Player:
         # Mundo
         self.floor = 1
         self.guild_id = None
+        self.death = 0
 
         # Inventário estruturado
         self.inventory = {

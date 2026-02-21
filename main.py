@@ -6,7 +6,7 @@ from systems.floors.floor_1 import floor_1
 from systems.character_menu.character_menu import character_menu
 
 def main():
-    app = ApplicationBuilder().token(BOT_TOKEN).build()
+    app = ApplicationBuilder().token(BOT_TOKEN).connect_timeout(60).read_timeout(60).write_timeout(60).pool_timeout(60).build()
 
     # =========================
     # Callback Router
