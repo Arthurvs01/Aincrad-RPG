@@ -1,6 +1,5 @@
 from telegram import InputMediaPhoto, InlineKeyboardMarkup, Update
 from telegram.ext import ContextTypes
-from core.text_loader import TextLoader
 
 
 class MessageManager:
@@ -34,7 +33,7 @@ class MessageManager:
 
         media = InputMediaPhoto(
             media=open(f"content/images/{image_path}", "rb"),
-            caption=TextLoader.load(text),
+            caption=text,
             parse_mode="HTML"
         )
 
@@ -62,7 +61,7 @@ class MessageManager:
         message = await context.bot.send_photo(
             chat_id=chat_id,
             photo=open(f"content/images/{image_path}", "rb"),
-            caption=TextLoader.load(text),
+            caption=text,
             parse_mode="HTML",
             reply_markup=reply_markup
         )

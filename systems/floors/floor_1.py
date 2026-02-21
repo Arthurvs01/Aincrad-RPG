@@ -1,5 +1,6 @@
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from core.message_manager import MessageManager
+from core.text_loader import TextLoader
 
 async def floor_1(update, context):
     query = update.callback_query
@@ -21,7 +22,7 @@ async def floor_1(update, context):
     await MessageManager.send_or_edit(
         update,
         context,
-        text="floors/floor_1.txt",
+        text=TextLoader.load("floors/floor_1.txt"),
         image_path="floors/floor_1.jpg",
         reply_markup=reply_markup,
     )

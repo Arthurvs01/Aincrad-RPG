@@ -3,6 +3,7 @@ from config import BOT_TOKEN
 from core.callback_router import CallbackRouter
 from systems.login_system import start_login, create_character, receive_name, select_class, ASK_NAME
 from systems.floors.floor_1 import floor_1
+from systems.character_menu.character_menu import character_menu
 
 def main():
     app = ApplicationBuilder().token(BOT_TOKEN).build()
@@ -15,6 +16,7 @@ def main():
     router.register("create_character", create_character)
     router.register("class_", select_class)
     router.register("floor_1", floor_1)
+    router.register("profile", character_menu)
 
     # =========================
     # Conversation (Nome)

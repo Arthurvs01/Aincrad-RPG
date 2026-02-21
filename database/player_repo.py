@@ -22,7 +22,7 @@ class PlayerRepository:
         with open(filepath, "w", encoding="utf-8") as f:
             json.dump(player.to_dict(), f, indent=4)
 
-    def get_player_by_chat_id(self, chat_id: int):
+    def get_player_by_chat_id(chat_id: int):
         for file in os.listdir(BASE_PATH):
             if file.endswith(f"-{chat_id}.json"):
                 with open(os.path.join(BASE_PATH, file), "r", encoding="utf-8") as f:

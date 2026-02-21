@@ -1,9 +1,9 @@
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.ext import ContextTypes, ConversationHandler
-
 from models.player import Player
 from database.player_repo import PlayerRepository
 from core.message_manager import MessageManager
+from core.text_loader import TextLoader
 
 
 ASK_NAME = 1
@@ -32,7 +32,7 @@ async def start_login(update: Update, context: ContextTypes.DEFAULT_TYPE):
             update,
             context,
             image_path="welcome.jpg",
-            text="already_registered.txt",
+            text=TextLoader.load("already_registered.txt"),
             reply_markup = InlineKeyboardMarkup(
                 [[InlineKeyboardButton("Menu", callback_data="floor_1")]]
                 )
@@ -47,7 +47,7 @@ async def start_login(update: Update, context: ContextTypes.DEFAULT_TYPE):
         update,
         context,
         image_path="welcome.jpg",
-        text="welcome.txt",
+        text=TextLoader.load("welcome.txt"),
         reply_markup=InlineKeyboardMarkup(keyboard)
     )
 
@@ -64,7 +64,7 @@ async def create_character(update: Update, context: ContextTypes.DEFAULT_TYPE):
         update,
         context,
         image_path="welcome.jpg",
-        text="ask_name.txt",
+        text=TextLoader.load("ask_name.txt"),
     )
 
     return ASK_NAME
@@ -91,7 +91,7 @@ async def receive_name(update: Update, context: ContextTypes.DEFAULT_TYPE):
         update,
         context,
         image_path="welcome.jpg",
-        text="choose_class.txt",
+        text=TextLoader.load("choose_class.txt"),
         reply_markup=InlineKeyboardMarkup(keyboard)
     )
 
@@ -121,7 +121,7 @@ async def select_class(update: Update, context: ContextTypes.DEFAULT_TYPE):
         update,
         context,
         image_path="welcome.jpg",
-        text="login_success.txt",
+        text=TextLoader.load("login_success.txt"),
         reply_markup = InlineKeyboardMarkup(
             [[InlineKeyboardButton("Menu", callback_data="floor_1")]]
             )
