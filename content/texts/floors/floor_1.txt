@@ -1,1 +1,22 @@
-teste primeiro andar
+===========================
+                      <b>1º ANDAR</b>
+                 <i>CAÇA PACÍFICA</i>
+===========================
+
+Você alcançou o primeiro andar.
+
+O ar é leve.
+O perigo… ainda é controlado.
+===========================
+             <b>AÇÕES DISPONÍVEIS</b>
+===========================
+
+🌲 <b>FLORESTA</b>
+Cace animais, colete recursos e obtenha recompensas.
+
+🏙 <b>CIDADE</b>
+Negocie, encontre guildas e aceite missões.
+
+Toda jornada começa com uma escolha.
+
+O que deseja fazer?
