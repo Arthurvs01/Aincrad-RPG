@@ -1,12 +1,12 @@
 ===========================
-    <b>MENU DE PERSONAGEM</b>
+    <b>🧍 MENU DE PERSONAGEM</b>
 ===========================
-<b>Nome</b>: {name}
-<b>Classe</b>: {pclass}
-<b>Guilda</b>: {guild}
-<b>Mortes</b>: {death}
-
-Status Ativo
-Dados Sincronizados
-
-Escolha sua proxima ação.
+<b>👤 Nome:</b> {name}  
+<b>⚔ Classe:</b> {pclass}  
+<b>🛡 Guilda:</b> {guild}  
+<b>☠ Mortes:</b> {death}  
+━━━━━━━━━━━━━━━━
+🟢 <b>Status:</b> Ativo  
+🔄 <b>Dados:</b> Sincronizados  
+━━━━━━━━━━━━━━━━
+Escolha sua próxima ação.

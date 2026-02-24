@@ -4,6 +4,7 @@ from core.callback_router import CallbackRouter
 from systems.login_system import start_login, create_character, receive_name, select_class, ASK_NAME
 from systems.floors.floor_1 import floor_1
 from systems.character_menu.character_menu import character_menu
+from systems.character_menu.status import status
 
 def main():
     app = ApplicationBuilder().token(BOT_TOKEN).connect_timeout(60).read_timeout(60).write_timeout(60).pool_timeout(60).build()
@@ -17,6 +18,7 @@ def main():
     router.register("class_", select_class)
     router.register("floor_1", floor_1)
     router.register("profile", character_menu)
+    router.register("status", status)
 
     # =========================
     # Conversation (Nome)

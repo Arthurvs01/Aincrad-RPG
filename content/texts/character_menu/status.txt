@@ -1,0 +1,16 @@
+===========================
+        📊 <b>STATUS</b>
+===========================
+<b>👤 Nome:</b> {name}  
+<b>⚔ Classe:</b> {classe}  
+<b>🛡 Guilda:</b> {guild}  
+━━━━━━━━━━━━━━━━
+<b>🏅 Nível:</b> {level}  
+<b>✨ XP:</b> {xp}  
+━━━━━━━━━━━━━━━━
+<b>❤️ HP:</b> {hp}  
+<b>🗡 Ataque:</b> {atk}  
+<b>🛡 Defesa:</b> {defense}  
+<b>💨 Agilidade:</b> {agi}  
+━━━━━━━━━━━━━━━━
+Status atualizado em tempo real.

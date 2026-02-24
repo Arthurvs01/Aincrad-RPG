@@ -26,6 +26,6 @@ async def exemplo_menu(update, context):
         update,
         context,
         text=TextLoader.load("caminho.txt").format(),
-        image_path="caminho.png",
+        image_path="caminho.jpg",
         reply_markup=reply_markup,
     )

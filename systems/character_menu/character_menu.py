@@ -15,16 +15,15 @@ async def character_menu(update, context):
 
     keyboard = [
         [
-            InlineKeyboardButton("Status", callback_data="status"),
-            InlineKeyboardButton("Guilda", callback_data="guild"),
+            InlineKeyboardButton("📊 Status", callback_data="status"),
+            InlineKeyboardButton("🛡 Guilda", callback_data="guild"),
         ],
         [
-            InlineKeyboardButton("Inventário", callback_data="inventory"),
-            InlineKeyboardButton("Equipamentos", callback_data="equipments"),
+            InlineKeyboardButton("🎒 Inventário", callback_data="inventory"),
+            InlineKeyboardButton("⚔ Equipamentos", callback_data="equipments"),
         ],
         [
-            InlineKeyboardButton("Menu", callback_data="Floor_1"),
-            InlineKeyboardButton("Reload", callback_data="profile"),
+            InlineKeyboardButton("🏠 Menu", callback_data="floor_1")
         ],
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
