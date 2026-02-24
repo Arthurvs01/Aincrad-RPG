@@ -10,7 +10,7 @@ async def character_menu(update, context):
     dados = PlayerRepository.get_player_by_chat_id(chat_id)
     name = dados["character_name"]
     pclass = dados["player_class"]
-    guild = dados["guild_id"]
+    guild = dados["guild_id"] or "Player sem Guilda"
     death = dados["death"]
 
     keyboard = [
