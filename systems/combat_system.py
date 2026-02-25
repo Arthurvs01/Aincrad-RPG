@@ -1,6 +1,6 @@
 import random
-from core.attribute_calc import AttributeCalculator
-from core.skill_system import SkillSystem
+from systems.attribute_calc import AttributeCalculator
+from systems.skill_system import SkillSystem
 
 
 class CombatSystem:
