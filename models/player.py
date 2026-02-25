@@ -29,7 +29,9 @@ class Player:
                 "couro": 0,
                 "madeira": 0,
                 "aco": 0,
-                "linha": 0
+                "linha": 0,
+                "jewel_life": 0,
+                "jewel_upgrade": 0,
             },
             "equipment": {
                 "weapon": [],
@@ -55,7 +57,19 @@ class Player:
         }
 
         # Skills
-        self.skills = ["basic_slash"]
+        self.skills = {
+            "regeneracao": 0,
+            "atk_percent": 0,
+            "def_percent": 0,
+            "roubo_vida": 0,
+            "fortuna": 0,
+            "critico": 0,
+            "esquiva": 0,
+            "resistencia": 0,
+            "precisao": 0,
+            "instinto": 0,
+            "foco": 0
+        }
 
     def to_dict(self):
         return self.__dict__
